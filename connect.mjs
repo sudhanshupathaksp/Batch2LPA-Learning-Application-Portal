@@ -1,7 +1,7 @@
 import oracledb from "oracledb";
 
 //const query = "SELECT * FROM DEPT";
-async function connect(query) {
+ async function connect(query) {
   let connection;
   try {
     connection = await oracledb.getConnection({
@@ -19,4 +19,5 @@ async function connect(query) {
   }
 }
 //connect();
+
 export default connect;
