@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="css/idash.css">
+<!------ Include the above in your HEAD tag ---------->
+
+<body>
+    <header>
+        <div class="container-fluid px-1 ">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand text-center px-2" href="#">Instructor</a>
+                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+                <!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="index.html">Home <span
+                                class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="#">Features</a>
+                    </div>
+                </div> -->
+            </nav>
+        </div>
+    </header>
+    <!---->
+    <main>
+        <div class="container my-5">
+            <!-- <div class="card-body text-center">
+                <h4 class="card-title">Special title treatment</h4>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            </div> -->
+            <div class="card">
+                <a id="add__new__list" href="/addc" type="button" class="btn btn-success position-absolute">Add new Courses</a> <br> 
+                    <br>
+                    <br>
+
+
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Course ID</th>
+                            <th scope="col">Course Name</th>
+                            <th scope="col">Start Date</th>
+                            <th scope="col">End Date </th>
+                            <th scope="col">Duration</th>
+                            <th scope="col">Enrolled Count</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Web Develpoment</td>
+                           <!-- // <td>Otto</td> -->
+                            <td>
+                                <input type="date" class="form-control" id="inputEmail4" placeholder="">
+                            </td>
+                            <td> <input type="date" class="form-control" id="inputEmail4" placeholder="">
+                            </td>
+                            <td>2 months</td>
+                            <td>10</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Python Programming</td>
+                            <!-- <td>Thornton</td> -->
+                            <td>
+                                <input type="date" class="form-control" id="inputEmail4" placeholder="">
+
+                            </td>
+                            <td> <input type="date" class="form-control" id="inputEmail4" placeholder="">
+                            </td>
+                            <td>2 months</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>C++ Programming</td>
+                            <td>
+                                <input type="date" class="form-control" id="inputEmail4" placeholder="">
+
+                            </td>
+                            <td> <input type="date" class="form-control" id="inputEmail4" placeholder="">
+                            </td>
+                            <td>3 months</td>
+                            <td>10</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- Large modal -->
+
+
+            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Special title treatment</h4>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                        </div>
+                        <div class=" card col-8 offset-2 my-2 p-3">
+                            <form>
+                                <div class="form-group">
+                                    <label for="listname">Course Name</label>
+                                    <input type="text" class="form-control" name="listname" id="listname"
+                                        placeholder="Enter your listname">
+                                </div>
+                                <div class="form-group">
+                                    <label for="datepicker">Start Date</label>
+                                    <input type="text" class="form-control" name="datepicker" id="datepicker"
+                                        placeholder="Pick up a date">
+                                </div>
+                                <div class="form-group">
+                                    <label for="datepicker">End Date</label>
+                                    <div class="input-group">
+
+                                        <input type="text" class="form-control" placeholder="Add an item"
+                                            aria-label="Search for...">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-secondary" type="button">Go!</button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="form-group text-center">
+                                    <button type="submit" class="btn btn-block btn-primary">Sign in</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!---->
+
+    <!---->
+    <footer>
+        <div class="container">
+
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -5,7 +5,7 @@ import oracledb from "oracledb";
   let connection;
   try {
     connection = await oracledb.getConnection({
-      user: "c##aduser",
+      user: "c##project",
       password: "root",
       connectString: "localhost:1521/xe",
     });
